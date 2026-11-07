@@ -1,0 +1,45 @@
+name: emoscan
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  tflite_flutter: ^0.11.0
+  collection: ^1.18.0
+  logger: ^2.0.2
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/smile_emoji.png
+    - assets/images/laugh_emoji.png
+    - assets/images/welcome_emoji.png
+    - assets/images/emologo.png
+    - assets/model/emoji_model.tflite
+    - assets/model/model_emotions.tflite
+    - assets/model/model_sentiment.tflite
+    - assets/tokenizer/tokenizer.json
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/emologo.png"
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/images/emologo.png"
